@@ -1,3 +1,20 @@
+"""
+    This file is part of Space Jumper.
+
+    Space Jumper is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Space Jumper is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Space Jumper.  If not, see <http://www.gnu.org/licenses/>. 2
+"""
+
 """ Cette classe est la base de tout element graphique du jeu, elle n'a pas pour but d'être instanciee mais d'être heritee """
 
 from tkinter import * # On importe tout Tkinter au cas ou les classes filles en auraient besion
