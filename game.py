@@ -489,7 +489,7 @@ class Game(Tk): # On herite la classe Game de Tk
             else : # Sinon
                 self.player.translate(Point(-10, 0)) # On le deplace de 10px vers la gauche
         elif event.keysym == "Up" : # Si c'est la touche haut
-            self.jump(self.standardJumpVel * 2) # On fait sauter le personnage (uniquement utile pour le debogage)
+            #self.jump(self.standardJumpVel * 2) # On fait sauter le personnage (uniquement utile pour le debogage)
             pass # Pas de cheat, S.V.P.
         elif event.keysym == "Down" : # Si c'est la touche bas
             #self.player.velY = 0 # On fait tomber le personnage (uniquement utile pour le debogage)
