@@ -290,7 +290,7 @@ class Game(Tk): # On herite la classe Game de Tk
 
         lowerRocketHit = self.collisionmanager.getLowerObject(self.collisionmanager.detectCollision([rockets])) # On recupere la fusee atteinte
 
-        if lowerRocketHit and self.player.pos.y + self.player.size.height > lowerRocketHit.pos.y + lowerRocketHit.size.height / 2: # Si les coordonees sont correctes
+        if lowerRocketHit and self.player.pos.y + self.player.size.height > lowerRocketHit.pos.y + lowerRocketHit.size.height / 2 : # Si les coordonees sont correctes
             self.soundManager.playSound(CONSTS.SOUND_ROCKET) # On lance le son correspondant
             self.player.setProxyDraw(lowerRocketHit.initDrawPlayer, lowerRocketHit.drawPlayer, lowerRocketHit.removeDrawPlayer) # On met un proxy a la fonction de dessin du personnage
                                                                                                                                 # C'est grace a ce macanisme que c'est une fusee qui est dessinee
@@ -323,7 +323,7 @@ class Game(Tk): # On herite la classe Game de Tk
             line = [] # On cree une nouvelle ligne de plateformes
 
             for j in range(0, self.size.width // pSize.width) : # Pour chaque colonne de plateforme
-                if random.random() > self.random and i > 0 and not self.platforms[i - 1][j]: # On choisit aleatoirement si il y aura une plateforme
+                if random.random() > self.random and i > 0 and not self.platforms[i - 1][j] : # On choisit aleatoirement si il y aura une plateforme
                     platform = Platform(self.ground) # On cree une nouvelle plateforme
                     platform.move(Point(pSize.width * j, (pSize.height * i))) # On la place correctement
                     line.append(platform) # On l'ajoute a la ligne
